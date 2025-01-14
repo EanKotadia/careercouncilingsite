@@ -1,0 +1,899 @@
+/* General Reset and Typography */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #e04d26 ;
+  --accent-color: ;  
+  --background-light: #ffffff;
+  --background-dark: #f0f0f0;
+  --text-color: #333;
+  --shadow: rgba(0, 0, 0, 0.1);
+  
+}
+
+body {
+  font-family: 'Roboto', sans-serif; /* Clean and professional font */
+  color: #333;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+a:hover {
+  color: var(--accent-color);
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  background: var(--background-light);
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  margin: 0;
+}
+
+.logo a {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: var(--primary-color);
+  letter-spacing: 0.5px;
+}
+
+/* Hero Section */
+.hero {
+  background: url('/Images/Hero.jpg') no-repeat center center/cover;
+  color: #ffffff;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.hero-text {
+  max-width: 600px;
+  margin: 0 auto;
+  color: #ffffff;
+}
+
+.hero-text h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.hero-text p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  background: var(--accent-color);
+  color: #ffffff !important; /* Ensure text color is white */
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: background 0.3s;
+  text-align: center; /* Center align text inside the button */
+  display: inline-block; /* Make sure button behaves like a block-level element */
+}
+
+.cta-button:hover {
+  background: #e04d26; /* Slightly darker orange for hover effect */
+}
+
+
+/* Features Section */
+.features {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+
+.feature {
+  background: var(--background-light);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px var(--shadow);
+  padding: 20px;
+  text-align: center;
+  width: 30%;
+  margin-bottom: 20px;
+}
+
+.feature img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.feature h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.feature p {
+  font-size: 1em;
+}
+
+/* Testimonials Section */
+.testimonials {
+  background: var(--background-light);
+  padding: 40px 0;
+}
+
+.testimonials h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.testimonial {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.testimonial img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 15px;
+}
+
+.testimonial blockquote {
+  font-style: italic;
+  font-size: 1.1em;
+}
+
+.testimonial footer {
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+/* Blog Section */
+.blog {
+  padding: 40px 0;
+}
+
+.blog h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.blog-post {
+  background: var(--background-light);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px var(--shadow);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.blog-post h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.blog-post p {
+  margin-bottom: 10px;
+}
+
+.blog-post a {
+  color: var(--accent-color);
+  font-weight: 700;
+}
+
+.blog-post a:hover {
+  color: #e04d26; /* Slightly darker orange for hover effect */
+}
+
+/* Featured Resources Section */
+.featured-resources {
+  background: var(--background-dark);
+  padding: 40px 0;
+}
+
+.featured-resources h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.resource {
+  background: var(--background-light);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px var(--shadow);
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.resource h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.resource p {
+  margin-bottom: 10px;
+}
+
+.resource a {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.resource a:hover {
+  color: var(--accent-color);
+}
+
+/* Events Section */
+.events {
+  padding: 40px 0;
+}
+
+.events h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.event-card {
+  background: var(--background-light);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px var(--shadow);
+  padding: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.event-card:hover {
+  transform: scale(1.02);
+}
+
+.event-card h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.event-card p {
+  margin-bottom: 10px;
+}
+
+.event-card .details {
+  display: none;
+  font-size: 1em;
+  margin-top: 10px;
+}
+
+.event-card.active .details {
+  display: block;
+}
+
+.carousel-text-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100%;
+  margin: 20px auto;
+}
+
+.carousel-container {
+  flex: 1;
+  max-width: 60%; /* Adjust width to fit design needs */
+  margin-right: 20px; /* Add some spacing between carousel and text */
+  position: relative;
+  overflow: hidden;
+}
+
+.text-section {
+  flex: 1;
+  max-width: 40%; /* The text takes up the remaining space */
+}
+
+.carousel-slide {
+  display: none;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: auto;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  color: #000;
+  cursor: pointer;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+/* Show the first slide initially */
+.carousel-slide:first-child {
+  display: block;
+}
+
+/* Container for the feature cards */
+.feature-card {
+  width: 30%;
+  margin-bottom: 20px;
+  perspective: 1000px;
+}
+
+/* Inner container for the flip effect */
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 300px; /* Adjust height as needed */
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  transform-origin: center;
+}
+
+/* Front and back sides of the card */
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.card-front {
+  background-size: cover;
+  background-position: center;
+}
+
+.card-back {
+  background: var(--background-light);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transform: rotateY(180deg);
+}
+
+/* Flip effect */
+.feature-card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px var(--shadow);
+  padding: 20px;
+}
+
+.card-front img {
+  display: none; /* Hide img tag, as background image is used */
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Footer */
+footer {
+  background: var(--background-light);
+  border-top: 1px solid #ddd;
+  padding: 20px 0;
+}
+
+.footer-left, .footer-right {
+  text-align: center;
+}
+
+.footer-left h3 {
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.footer-left p {
+  margin-bottom: 5px;
+}
+
+.footer-right ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-right ul li {
+  margin: 0;
+}
+
+.footer-right ul li a {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.footer-right ul li a:hover {
+  color: var(--accent-color);
+}
+/* Header Navigation Styles */
+header {
+  background: var(--background-dark);
+  padding: 10px 0;
+}
+
+nav {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: var(--accent-color);
+}
+
+.logo {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: var(--primary-color);
+  text-transform: uppercase;
+}
+
+/* Ensure the logo is not hidden */
+.logo a {
+  color: inherit; /* Inherit color from the parent .logo */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Events Section */
+.events {
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white for a cleaner look */
+  padding: 40px 0; /* Increased padding for a more spacious layout */
+  border-top: 5px solid #E51A4C; /* Accent color for top border */
+}
+
+.events h1 {
+  text-align: center;
+  color: #353500; /* Darker color for main heading */
+  margin-bottom: 30px; /* Increased margin for better separation */
+  font-size: 2.2em; /* Slightly larger font size for prominence */
+}
+
+.event {
+  margin: 20px auto; /* Center align and spacing for each event */
+  padding: 20px; /* Increased padding for a more spacious feel */
+  border: 1px solid var(--primary-color); /* Crimson Red border */
+  border-radius: 10px; /* Rounded corners for a modern look */
+  background-color: #ffffff; /* White background for readability */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  max-width: 800px; /* Maximum width for better layout */
+}
+
+.event h2 {
+  color: #E51A4C; /* Crimson Red for event titles */
+  margin-bottom: 10px; /* Space below the title */
+  font-size: 1.8em; /* Slightly larger font size for titles */
+}
+
+.event p {
+  margin: 10px 0; /* Space between paragraphs */
+  color: #353500; /* Darker color for event details */
+  font-size: 1.1em; /* Professional font size */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .events {
+      padding: 30px 0; /* Reduced padding for smaller screens */
+  }
+
+  .event {
+      padding: 15px; /* Reduced padding for smaller screens */
+  }
+
+  .event h2 {
+      font-size: 1.5em; /* Adjusted font size for event titles */
+  }
+
+  .event p {
+      font-size: 1em; /* Adjusted font size for event details */
+  }
+}
+
+@media (max-width: 480px) {
+  .events {
+      padding: 20px 0; /* Further reduced padding for very small screens */
+  }
+
+  .event {
+      padding: 10px; /* Further reduced padding */
+      max-width: 100%; /* Full width for smaller screens */
+  }
+
+  .event h2 {
+      font-size: 1.3em; /* Adjusted font size for event titles */
+  }
+
+  .event p {
+      font-size: 0.9em; /* Adjusted font size for event details */
+  }
+}
+/* Carousel */
+.carousel-container {
+  position: fixed;
+  bottom: 20px; /* Distance from the bottom of the page */
+  right: 20px; /* Distance from the right of the page */
+  width: 400px; /* Increased width for a larger carousel */
+  height: 250px; /* Increased height for a larger carousel */
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  background-color: #000000; /* Dark background to ensure text stands out */
+  border-radius: 8px; /* Rounded corners for a polished look */
+  position: relative; /* Positioning context for overlay text */
+}
+
+.carousel-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  position: relative; /* Positioning context for overlay text */
+}
+
+.carousel-slide img {
+  width: 100%; /* Fixed width of the image */
+  height: 100%; /* Fixed height of the image */
+  object-fit: cover; /* Ensure the image covers the container */
+}
+
+/* Overlay Text */
+.carousel-text {
+  position: absolute;
+  bottom: 20px; /* Distance from the bottom of the carousel */
+  left: 20px; /* Distance from the left of the carousel */
+  color: #ffffff; /* White text color */
+  font-size: 1.5em; /* Increased font size for better visibility */
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+  padding: 10px; /* Padding around text */
+  border-radius: 5px; /* Rounded corners for the text box */
+}
+
+/* Navigation Buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 24px; /* Increased font size for better visibility */
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.content{
+  display: none
+}
+
+.loader{
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-color: #16191e;
+  position:absolute;
+}
+
+.loader div {
+  height:100px;
+  width:100px;
+  border: 15px solid #45474b;
+  border-top-color: #2a88e6;
+  position:absolute;
+  margin:auto;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  animation: spin 1.5s infinite linear;
+  border-radius: 50%;
+}
+
+@keyframes spin {
+  100%{
+    transform: rotate(360deg);
+  }
+} 
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 500px; /* Adjust height as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white; /* Text color */
+  overflow: hidden;
+  z-index: 0;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/Images1/Hero.jpg'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  opacity: 70%; /* Adjust the opacity as needed */
+  z-index: -1; /* Ensure the image is behind the text */
+}
+
+.hero-text {
+  text-align: center;
+  z-index: 1; /* Ensure the text is above the background */
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #f46530; /* Use your chosen color */
+  color: rgb(195, 199, 193);
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+  background-color: #618cd0; /* Change color on hover */
+}
+
+.logo {
+  display: inline-block;
+  height: 115px;
+  width: 180px;
+  background-image: url("/Images/Logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.logo a {
+    display: block;
+    width: 180px; /* Adjust width */
+    height: 115px; /* Adjust height */
+    background-image: url("/Images/Logo.png"); /* Replace with your logo URL */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    left: -9999999px; /* Extremely negative position */
+    top: 50%; /* Vertically center */
+    transform: translateY(-50%); /* Adjust to keep centered */
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    background: var(--primary-color);
+    border-radius: 5px;
+    color: #fff !important;
+}
+
+.logo {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  display: inline-block;
+  height: 130px;
+  width: 180px;
+  background-image: url("/Images1/Logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+/* Hero section styling */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background: url('/path/to/your/hero-image.jpg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.hero-text {
+  z-index: 1; /* Ensures text is above background */
+}
+
+/* Profile card styling */
+.profile-card {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  z-index: 2;
+  color: #333;
+}
+
+.profile-card .profile-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.profile-card h2 {
+  margin: 10px 0 5px;
+  font-size: 22px;
+}
+
+.profile-card p {
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Stats section */
+.stats {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stat h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #618cd0; /* Accent color */
+}
+
+.stat p {
+  margin-top: 5px;
+  font-size: 12px;
+  color: #333;
+}
+
+
+#colored-text {
+  color: var(--primary-color); /* Change this to any color you like */
+}

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="english">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Career Counseling - Your Path to Success</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="loader">
+      <div></div>
+    </div>
+    <div class="content">
+      <header>
+        <nav>
+          <div class="container">
+            <ul class="nav-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li class="logo"><a href="index.html">UniGlobe</a></li>
+              <li><a href="resources.html">Resources</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <section class="hero">
+        <section class="hero">
+          <div class="hero-text">
+            <h1 class="typing-effect">Welcome to Career Counseling</h1>
+            <p class="typing-effect">
+              Your Journey to a Fulfilling Career Starts Here
+            </p>
+            <a href="services.html" class="cta-button">Explore Our Services</a>
+            <script>
+              $(window).on("load", function () {
+                $(".loader").fadeOut(1500);
+                $(".content").fadeIn(1500);
+              });
+
+              function typeEffect(element, text, speed) {
+                let index = 0;
+
+                function type() {
+                  if (index < text.length) {
+                    element.innerHTML += text.charAt(index);
+                    index++;
+                    setTimeout(type, speed);
+                  }
+                }
+
+                type();
+              }
+
+              window.onload = function () {
+                const h1Element = document.querySelector(".hero-text h1");
+                const pElement = document.querySelector(".hero-text p");
+
+                const h1Text = "Welcome to Career Counseling";
+                const pText = "Your Journey to a Fulfilling Career Starts Here";
+
+                h1Element.innerHTML = "";
+                pElement.innerHTML = "";
+
+                typeEffect(h1Element, h1Text, 50);
+                setTimeout(() => {
+                  typeEffect(pElement, pText, 50);
+                }, h1Text.length * 100 + 500);
+              };
+            </script>
+            <script>
+              function typeEffect(element, text, speed) {
+                let index = 0;
+
+                function type() {
+                  if (index < text.length) {
+                    element.innerHTML += text.charAt(index);
+                    index++;
+                    setTimeout(type, speed);
+                  }
+                }
+
+                type();
+              }
+
+              window.onload = function () {
+                // Select elements for typing effect
+                const h1Element = document.querySelector(".hero-text h1");
+                const pElement = document.querySelector(".hero-text p");
+
+                // Text to type
+                const h1Text = "Welcome to Career Counseling";
+                const pText = "Your Journey to a Fulfilling Career Starts Here";
+
+                // Clear the elements
+                h1Element.innerHTML = "";
+                pElement.innerHTML = "";
+
+                // Start typing effects
+                typeEffect(h1Element, h1Text, 100); // Typing speed: 100ms
+                setTimeout(() => {
+                  typeEffect(pElement, pText, 100);
+                }, h1Text.length * 100 + 500); // Delay typing of <p> until <h1> is done
+              };
+            </script>
+          </div>
+          <!-- Profile Card -->
+          <div class="profile-card">
+            <img
+              src="/Images2/profile_pic.png"
+              alt="Profile Picture"
+              class="profile-img"
+            />
+            <h2>John Doe</h2>
+            <p>Student at XYZ High School</p>
+            <div class="stats">
+              <div class="stat">
+                <h3>15</h3>
+                <p>Essays Written</p>
+              </div>
+              <div class="stat">
+                <h3>8</h3>
+                <p>Extracurriculars</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section class="features">
+        <div class="feature-card">
+          <div class="card-inner">
+            <div
+              class="card-front"
+              style="background-image: url('/Images1/Grad.jpg')"
+            ></div>
+            <div class="card-back">
+              <h2>SAT/ACT Preparation</h2>
+              <p>
+                Preparing for the SAT or ACT can be a daunting task, but with
+                our comprehensive prep services, you'll be ready to tackle these
+                exams with confidence. Read more about this in the services tab.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="card-inner">
+            <div
+              class="card-front"
+              style="background-image: url('/Images1/GirlHoldingBook.jpg')"
+            >
+              <!-- You can add an overlay or content on the front side if needed -->
+            </div>
+            <div class="card-back">
+              <h2>Expert Career Guidance</h2>
+              <p>
+                Our experienced counselors provide tailored advice to help you
+                achieve your career goals.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="card-inner">
+            <div
+              class="card-front"
+              style="background-image: url('/Images1/ChildMeet.jpg')"
+            ></div>
+            <div class="card-back">
+              <h2>Comprehensive Career Resources</h2>
+              <p>
+                Access a wide range of tools and resources to support your
+                career development.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="featured-resources container">
+        <h1>Featured Resources</h1>
+        <div class="resource">
+          <h2>Scholarship Finder</h2>
+          <p>
+            Discover scholarships that can help fund your education. Explore our
+            comprehensive scholarship finder tool.
+          </p>
+          <a
+            href="https://www.yumpu.com/en/document/view/35379607/download-this-printable-pdf-scholarship-america#"
+            download
+            >Download Scholarship List</a
+          >
+        </div>
+        <div class="resource">
+          <h2>More Info</h2>
+          <p>
+            This PDF serves as an intro to finding your future dream college
+          </p>
+          <a
+            href="https://www.lacademy.edu/uploaded/2015_Graphic_Files/PDFs/CCH_COMPLETE_DOCUMENT.June_2016.pdf"
+            download
+            >Download PDF</a
+          >
+        </div>
+      </section>
+      <section>
+        <div class="carousel-text-container">
+          <!-- Carousel Section -->
+          <div class="carousel-container">
+            <div class="carousel-slide">
+              <img
+                src="https://via.placeholder.com/600x300?text=Slide+1"
+                alt="Slide 1"
+              />
+              <div class="carousel-text">Empowering Education</div>
+            </div>
+            <div class="carousel-slide">
+              <img
+                src="https://via.placeholder.com/600x300?text=Slide+2"
+                alt="Slide 2"
+              />
+              <div class="carousel-text">Diverse Learning Opportunities</div>
+            </div>
+            <div class="carousel-slide">
+              <img
+                src="https://via.placeholder.com/600x300?text=Slide+3"
+                alt="Slide 3"
+              />
+              <div class="carousel-text">Inspiring Minds</div>
+            </div>
+            <div class="carousel-slide">
+              <img
+                src="https://via.placeholder.com/600x300?text=Slide+4"
+                alt="Slide 4"
+              />
+              <div class="carousel-text">Future Leaders</div>
+            </div>
+            <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
+            <a class="next" onclick="moveSlide(1)">&#10095;</a>
+          </div>
+
+          <!-- Text Section -->
+          <div class="text-section">
+            <h2>About Our Vision</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+              vehicula nunc nec diam fermentum, non tristique eros porttitor.
+              Suspendisse vitae leo at libero volutpat ultrices. Fusce maximus
+              libero vitae orci varius, non aliquet lectus accumsan. Curabitur
+              quis tortor nec ipsum placerat venenatis.
+            </p>
+            <p>
+              Aenean volutpat odio a felis malesuada, non tempor magna aliquam.
+              Etiam eget magna eros. Nulla facilisi. Ut volutpat auctor eros, ac
+              suscipit lorem sagittis nec. Mauris feugiat tellus eget lectus
+              tempor, vitae facilisis lorem ultricies. Nam a nisi libero.
+            </p>
+            <p>
+              Donec a nisl quis lectus iaculis gravida a non quam. Phasellus
+              rhoncus viverra ex, eget fermentum orci dictum at. Ut vel urna nec
+              mauris convallis auctor. Pellentesque luctus augue vitae ante
+              convallis, at posuere orci accumsan.
+            </p>
+          </div>
+        </div>
+        <script>
+          let currentSlide = 0;
+          const slides = document.querySelectorAll(".carousel-slide");
+
+          function moveSlide(direction) {
+            slides[currentSlide].style.display = "none";
+            currentSlide =
+              (currentSlide + direction + slides.length) % slides.length;
+            slides[currentSlide].style.display = "block";
+          }
+        </script>
+
+        <script src="index.js"></script>
+      </section>
+      <section class="events container">
+        <h1>Upcoming Events</h1>
+        <div class="event">
+          <h2>College Fair</h2>
+          <p>Date: MM/DD/YYYY</p>
+          <p>
+            Meet with representatives from various colleges to learn more about
+            your options.
+          </p>
+        </div>
+        <div class="event">
+          <h2>Career Workshop</h2>
+          <p>Date: MM/DD/YYYY</p>
+          <p>
+            Join our workshop to gain insights into building a successful
+            career.
+          </p>
+        </div>
+        <!-- Add more events as needed -->
+      </section>
+      <footer>
+        <div class="container">
+          <div class="footer-left">
+            <h3>Career Counseling</h3>
+            <p>123 Career Avenue, Success City, SC 12345</p>
+            <p>Phone: 555-555-5555</p>
+            <p>
+              Email:
+              <a href="mailto:info@careercounseling.com"
+                >info@careercounseling.com</a
+              >
+            </p>
+          </div>
+          <div class="footer-right">
+            <ul>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+              <li><a href="terms.html">Terms of Service</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script>
+      $(window).on("load", function () {
+        $(".loader").fadeOut(2000);
+        $(".content").fadeIn(2000);
+      });
+    </script>
+  </body>
+</html>
